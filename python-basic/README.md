@@ -33,11 +33,15 @@ python3 -m venv python-basic
 pip install django
 ```
 
-## アプリケーション（ひな形）を作る
+## ２ アプリケーション（ひな形）を作る
 
 [参考動画](https://youtu.be/TkgnA-reQLc?si=MJ3TLEAfmir6pHCa)
 
 [参考資料](https://docs.djangoproject.com/ja/4.1/intro/tutorial01/#creating-the-polls-app)
+
+
+### 2-1 `python manage.py startapp アプリ名`
+
 
 ```bash
 # pwdコマンドで（外側の）myappnに居ることを確認
@@ -50,3 +54,23 @@ python manage.py startapp accounts
 python manage.py startapp posts
 ```
 
+### 2-2 appひな形を登録
+
+ファイル`myapp/myapp/settings.py`を編集
+
+```python
+(略)
+# Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'accounts',    # <---- 追記
+    'posts',       # <---- 追記
+]
+(略)
+```
