@@ -1,9 +1,17 @@
-# 変数
-MAX_LENGTH = 100 #定数は慣習として大文字
-hello = 'Hello World'
-name = 'taro'
-age = 20
+# リスト
+persons = ["tarro", "jiro", "saburo", "shiro"]
 
-print(hello)
-print(f'{hello} taro')
-print(f"name: {name} age: {age}")
+# print(persons)
+# print(persons[1])
+
+# for v in persons:
+#   print(v)
+  
+# persons[2] = "hanako"
+# persons.append("goro")
+
+# print(persons)
+# print(len(persons))
+# print(persons[1:])
+# print(persons[:2])
+print(persons[1:3])
