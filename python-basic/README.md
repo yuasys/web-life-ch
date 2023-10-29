@@ -33,4 +33,20 @@ python3 -m venv python-basic
 pip install django
 ```
 
+## アプリケーション（ひな形）を作る
+
+[参考動画](https://youtu.be/TkgnA-reQLc?si=MJ3TLEAfmir6pHCa)
+
+[参考資料](https://docs.djangoproject.com/ja/4.1/intro/tutorial01/#creating-the-polls-app)
+
+```bash
+# pwdコマンドで（外側の）myappnに居ることを確認
+pwd # 例~/source/youtube/web-life-ch/myapp
+
+# まずは、accountsアプリを作る
+python manage.py startapp accounts
+
+# 続いて、postsアプリを作る
+python manage.py startapp posts
+```
 
