@@ -93,3 +93,23 @@ Run 'python manage.py migrate' to apply them.`
 ```zsh
 python manage.py migrate
 ```
+
+### 3-2 createsuperuserコマンドを実行
+
+下記は実行例です。
+
+```python
+python manage.py createsuperuser
+Username (leave blank to use 'hoge'): test@test.com
+Email address: test@test.com
+Password: testtest
+Password (again): testtest
+The password is too similar to the username.
+This password is too common.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+```
+
+### 3-3 ローカル開発サーバーを起動して確認する
+
+`python manage.py runserver`を打ってサーバーを起動して、ブラウザから「 http://127.0.0.1:8000/admin/ 」にアクセスして、管理者ユーザーでログインできるか確認してみる。
