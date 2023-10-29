@@ -74,3 +74,22 @@ INSTALLED_APPS = [
 ]
 (略)
 ```
+
+## ３ 管理者ユーザー（SuperUser）の作成
+
+### 3-1 準備
+
+#### 3-1-1 外側の`myapp`に居ることを確認してから`python manage.py runserver`でローカルの開発サーバーを起動する
+
+下記のエラーメッセージが出ていることを確認する
+
+`You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.`
+
+#### 3-1-2 `python manage.py migrate`でマイグレートを実行する
+
+`control+c`で開発サーバーを終了させて、エラーメッセージの中にある指示に基づいてマイグレートする
+
+```zsh
+python manage.py migrate
+```
