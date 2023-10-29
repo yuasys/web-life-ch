@@ -1,15 +1,10 @@
-# 辞書
+# 条件分岐
+animal = 'cat'
 
-person = {'name': 'taro', 'age': 20}
-# print(person)
-# keyが'name'の要素のvalueを表示する
-#print(person['name'])
-
-# for k in person.keys():
-#   print(k)
-  
-# for v in person.values():
-#   print(v)
-for k, v in person.items():
-  print(k, v)
+if animal == 'cat':
+  print('nya')
+elif animal == 'dog':
+  print('wan')
+else:
+  print('anather animal')
   
